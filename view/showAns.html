@@ -1,0 +1,35 @@
+<section id="showAns">
+    <p> Cras luctus efficitur dignissim. Nam vel metus vitae tellus ornare commodo. Cras condimentum erat pellentesque 
+        finibus aliquet. Ut vel lectus sit amet ante pharetra ullamcorper. Donec aliquet tellus nec facilisis accumsan. 
+        Duis sed ex sollicitudin, gravida velit sed, fringilla est.</p>
+
+    <br />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ANS</th>
+                <th>Departamento</th>
+                <th>Responsável</th>
+                <th>Consulta</th>
+                <th>Alcanse</th>
+                <th>Dt inicial</th>
+                <th>Dt assinatura</th>
+                <th>E-mail</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in listaAtual">
+                <td>{{item.id_ans}}</td>
+                <td>{{item.departamento}}</td>
+                <td>{{item.responsavel}}</td>
+                <td>{{item.consulta}}</td>
+                <td>{{item.alcance}}</td>
+                <td>{{item.dt_inicio}}</td>
+                <td>{{item.dt_assinatura}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.situacao}}</td>
+            </tr>
+        </tbody>
+    </table>    
+</section>

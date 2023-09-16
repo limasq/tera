@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="lib/tetris.ico" />
+        <title>CRUD</title>
+
+        <link rel="stylesheet" href="/includes/bootstrap/5x/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="app/principal.css" />
+    </head>
+    <body ng-controller="myCtrl">
+
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#/!">
+                    <img src="lib/tetris.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    <span id="tetris_descricao">Administrativo</span>
+                </a>
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!newAns">Novo ANS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!updateAns">Atualiza ANS</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!showAns">Lista ANS</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!delAns">Exclui ANS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+
+        <div class="container">
+
+            <div ng-view></div>
+
+        </div>
+    </body>
+
+    <script src="/includes/angularjs/1.8.0/angular.min.js"></script> 
+    <script src="/includes/angularjs/1.8.0/angular-route.min.js"></script> 
+    <script src="/includes/angularjs/1.8.0/angular-animate.min.js"></script> 
+
+    <script src="/includes/bootstrap/5x/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app/principal.js"></script>
+    
+</html>

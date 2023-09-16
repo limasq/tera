@@ -1,0 +1,69 @@
+<section id="newAns">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet bibendum dolor, at rutrum lectus 
+        pretium sit amet. Donec suscipit in magna vitae porttitor. Ut dictum urna ac iaculis auctor. Morbi iaculis 
+        est ut massa facilisis scelerisque. Pellentesque at urna sed dolor blandit pellentesque nec sed ex. Sed 
+        non enim et ex aliquet consequat. Morbi id pulvinar erat. In nec mauris ac sapien placerat rutrum sit amet 
+        ut magna. Cras turpis ligula, dignissim eu bibendum sed, suscipit a tortor.</p>
+
+    <p>Ut in accumsan nulla. Aliquam id ultricies leo. Etiam fringilla luctus augue vel bibendum. Curabitur quis 
+        sollicitudin dolor. Sed feugiat efficitur lectus, in tincidunt eros euismod id. Etiam fermentum nulla quis 
+        arcu pellentesque, et fringilla odio ultricies. Phasellus laoreet elit eu lorem viverra, at laoreet metus 
+        pharetra.</p>
+
+    <div class="card">
+        <h3 class="subtitulo">Informações necessárias do departamento consumidor</h3>
+        
+        <div class="card-body">
+            <form>
+                <div class="mb-3 row">
+                    <label for="departamento" class="form-label col-sm-3">Departamento</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="departamento" ng-model="departamento" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="responsavel" class="form-label col-sm-3">Responsável pelos dados</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="responsavel" ng-model="responsavel" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="email_princiapal" class="form-label col-sm-3">E-mail do departamento</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="email_princiapal" ng-model="email_princiapal" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="necessidade" class="form-label col-sm-3">Necessidade</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="necessidade" ng-model="necessidade" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="faixa_tempo" class="form-label col-sm-3">Faixa de tempo</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="faixa_tempo" ng-model="faixa_tempo" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="informacao" class="form-label col-sm-3">Informação desejada</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="informacao" ng-model="informacao" />
+                    </div>    
+                </div>
+
+                <div class="mb-3 row">
+                    <label class="form-label col-sm-3">&nbsp;</label>
+                    <div class="col-sm-9">
+                        <button type="button" class="btn btn-primary" ng-click="btn_add_ans()">Adicionar</button>
+                    </div>    
+                </div>
+            </form>
+        </div>
+    </div>    
+</section>

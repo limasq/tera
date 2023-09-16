@@ -1,0 +1,50 @@
+<section id="updateAns">
+    <p> Vivamus lobortis ullamcorper nisi. Cras urna nulla, molestie vel diam a, rhoncus finibus odio. Etiam semper, eros ac 
+        tempor pretium, nisl eros suscipit neque, ac aliquet tellus nulla sed orci. Ut euismod ultrices lorem, in lacinia 
+        tellus ullamcorper ac. Nulla mollis gravida odio vel auctor. Pellentesque habitant morbi tristique senectus et netus 
+        et malesuada fames ac turpis egestas. Vivamus libero ante, elementum vel hendrerit eget, bibendum id est. Cras sed 
+        vestibulum leo. </p>
+
+        <div class="card">
+            <h3 class="subtitulo">Opções de alteração ou atualização</h3>
+            
+            <div class="card-body">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="situacao" class="form-label col-sm-3">Mudança na situação do ANS</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="situacao" ng-model="situacao" />
+                        </div>    
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="altera_responsavel" class="form-label col-sm-3">Mudança do responsável</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="altera_responsavel" ng-model="altera_responsavel" />
+                        </div>    
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="altera_faixa_tempo" class="form-label col-sm-3">Mudança na faixa de tempo</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="altera_faixa_tempo" ng-model="altera_faixa_tempo" />
+                        </div>    
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="altera_consumo" class="form-label col-sm-3">Mudança na informação</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="altera_consumo" ng-model="altera_consumo" />
+                        </div>    
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label class="form-label col-sm-3">&nbsp;</label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-primary" ng-click="btn_alt_ans()">Atualizar</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>                     
+</section>

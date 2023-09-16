@@ -1,0 +1,25 @@
+<section id="delAns">
+    <p> Aenean et dolor auctor, euismod velit at, condimentum felis. Donec id leo vitae libero congue eleifend. Ut dictum 
+        laoreet enim, at ultrices nulla. Duis rutrum lobortis vestibulum. Phasellus egestas pharetra nunc in finibus. Nam 
+        non ipsum malesuada, lobortis lectus eu, suscipit mi. Praesent libero lacus, lobortis commodo dui pretium, eleifend 
+        tincidunt est. Nunc eu volutpat ligula. Nam eget massa mauris. In eget condimentum sem.</p>
+
+        <div class="card">
+            <h3 class="subtitulo">Informe o ANS a ser excluído</h3>
+            
+            <div class="card-body">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="situacao" class="form-label col-sm-3">Anulação do ANS</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="situacao" ng-model="numAns" />
+                        </div>    
+
+                        <div class="col-sm-1">
+                            <button type="button" class="btn btn-primary" ng-click="btn_del_ans()">Excluir</button>
+                        </div>                            
+                    </div>
+                </form>
+            </div>
+        </div>    
+</section>
