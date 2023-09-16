@@ -39,7 +39,7 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
         $scope.mostra_ans_assinado = function(){
             console.log("tbl carregada no inicio");
 
-            $http.get("lib/api.php").then(function (response) {
+            $http.get("lib/api_buscaAns.php").then(function (response) {
 				$scope.listaAtual = response.data;
 			});
         };
