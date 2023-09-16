@@ -12,10 +12,10 @@
                 <th>Responsável</th>
                 <th>Consulta</th>
                 <th>Alcanse</th>
-                <th>Dt inicial</th>
                 <th>Dt assinatura</th>
                 <th>E-mail</th>
                 <th>Situação</th>
+                <th colspan="2" style="text-align: center;">Ação</th>
             </tr>
         </thead>
         <tbody>
@@ -25,10 +25,11 @@
                 <td>{{item.responsavel}}</td>
                 <td>{{item.consulta}}</td>
                 <td>{{item.alcance}}</td>
-                <td>{{item.dt_inicio}}</td>
                 <td>{{item.dt_assinatura}}</td>
                 <td>{{item.email}}</td>
                 <td>{{item.situacao}}</td>
+                <td><button class="btn btn-outline-warning btn-sm" ng-click="altera()">Altera</button></td>
+                <td><button class="btn btn-outline-danger btn-sm" ng-click="remove()">Remove</button></td>
             </tr>
         </tbody>
     </table>    

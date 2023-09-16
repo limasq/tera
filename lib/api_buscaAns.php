@@ -18,7 +18,6 @@ while ($rs = $result->fetch_array(MYSQLI_ASSOC)) {
     $output .= ' "responsavel":"' . $rs["responsavel"] . '",';
     $output .= ' "consulta":"' . $rs["consulta"] . '",';
     $output .= ' "alcance":"' . $rs["alcance"] . '",';
-    $output .= ' "dt_inicio":"' . $rs["dt_inicio"] . '",';
     $output .= ' "dt_assinatura":"' . $rs["dt_assinatura"] . '",';
     $output .= ' "email":"' . $rs["email"] . '",';
     $output .= ' "situacao":"' . $rs["situacao"] . '"}';
