@@ -1,4 +1,4 @@
-# CRUD-TERA-ANS 
+# CRUD-TERA
 
 ## Objetivo
 
@@ -21,13 +21,12 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 3. O tempo de validade do acordo será de 2 anos, com início a partir da assinatura do chefe do departamento consumidos dos dados;
 4. O departamento fornecedor dos dados tem o direito de romper o acordo unilateralmente se perceber vazamento indevido de informações.
 
-## Estrutura do aplicativo
+## Progresso e ações tomadas
 
-O aplicativo web de gerenciamento de ANS obedecerá a filosofia estrutural MVC;
-
-* Diretório View: onde ficarão as páginas ou templates do sistema;
-* Diretório Model: onde ficarão os arquivos de conexão com o banco de dados e api;
-* Diretório Controller: onde ficarão os scripts de interação entre o View e o Model. 
+1. Começando com uma SPA, com roteamento entre páginas separadamente;
+2. Transformar a página que lista os ANS para que acione modais para alteração, exclusão e inclusão de novos ANS;
+3. Inclusão dos botões de alteração e exclusão;
+4. Transformação dos botões de alteração e exclusão em links apontando para as referidas páginas pelas rotas"
 
 ## Linguagens utilizadas;
 
