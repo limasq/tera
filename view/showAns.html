@@ -30,7 +30,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="item in listaAtual">
+            <tr ng-repeat="item in listaAtual | filter:criterioDeBusca">
                 <td>{{item.id_ans}}</td>
                 <td>{{item.departamento}}</td>
                 <td>{{item.responsavel}}</td>
