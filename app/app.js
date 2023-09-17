@@ -45,4 +45,5 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
         };
 
         $scope.mostra_ans_assinado();
+
     });
