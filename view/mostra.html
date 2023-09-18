@@ -10,8 +10,8 @@
             <input class="form-control" type="text" ng-model="criterioDeBusca" placeholder="O que tu está procurando..." />
         </div>    
 
-        <div class="col-sm-2" style="text-align: right;">
-            <a class="btn btn-outline-success btn-sm" href="#!newAns">Adiciona ANS</a>
+        <div class="col-sm-2 d-grid gap-2" style="text-align: right;">
+            <a class="btn btn-outline-success" href="#!insere">Adiciona ANS</a>
         </div>                            
     </div>
 
@@ -39,8 +39,8 @@
                 <td>{{item.dt_assinatura | date:'dd/MM/yyyy'}}</td>
                 <td>{{item.email}}</td>
                 <td>{{item.situacao}}</td>
-                <td><a class="btn btn-outline-warning btn-sm" href="#!updateAns">Altera</a></td>
-                <td><a class="btn btn-outline-danger btn-sm" href="#!delAns">Remove</a></td>
+                <td><a class="btn btn-outline-warning btn-sm" href="#!atualiza">Altera</a></td>
+                <td><a class="btn btn-outline-danger btn-sm" href="#!remove">Remove</a></td>
             </tr>
         </tbody>
     </table>    
