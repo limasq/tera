@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Desenvolver um sistema CRUD simples em vanilla JavaScript, Bootstrap, PHP e MySQL para funcionar como um CRM de ANS para compartilhamento de dados, dentro das diretrizes da LGPD.
+Desenvolver um sistema CRUD simples em Angular 1x, Bootstrap 5x, PHP 7x e MySQL para funcionar como um CRM de ANS para compartilhamento de dados, dentro das diretrizes da LGPD.
 
 ## Detalhamento
 
@@ -31,7 +31,7 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 ## Linguagens utilizadas;
 
 * HTML5;
-* CSS - Bootstrap 3x
+* CSS - Bootstrap 5x
 * Vanilla JavaScript, jQuery, Angular 1x
-* PHP5 e/ou PHP7
+* PHP 7.3.10
 * SQL
