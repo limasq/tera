@@ -1,19 +1,22 @@
+
 <div class="card card-entrada">
     <div class="card-body">
-
-        <form name="login">
-            <div class="mb-3">
-                <label for="login" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="login" ng-model="login" />
+        <form>
+            <div class="row mb-3">
+                <label for="login" class="col-sm-4 col-form-label">Login</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="login" ng-model="login" placeholder="E-mail cadastrado" />
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="senha" class="form-label">Password</label>
-                <input type="password" class="form-control" id="senha" ng-model="senha" />
+            
+            <div class="row mb-3">
+                <label for="senha" class="col-sm-4 col-form-label">Senha</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="senha" ng-model="senha" placeholder="Senha cadastrada" />
+                </div>
             </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
+  
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>      
     </div>
-</div>
+</div>      
