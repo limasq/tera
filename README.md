@@ -35,3 +35,12 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 * Vanilla JavaScript, jQuery, Angular 1x
 * PHP 7.3.10
 * SQL
+
+## Fontes
+* [Playlist Angularjs - Rodrigo Branas](https://www.youtube.com/watch?v=_y7rKxqPoyg&t=25s) 
+* [Página oficial do Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* [Datasets gratis para MySQL](https://www.databasestar.com/free-data-sets/)
+
+
+## Hospedagem: 
+* http://asdfool.com.br/index.html 
