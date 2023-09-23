@@ -4,7 +4,10 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
         $routeProvider
         
         .when("/", {
-            templateUrl : "view/home.html"
+            templateUrl : "view/login.html"
+        })
+        .when("/cadastro", {
+            templateUrl : "view/cadastro.html"
         })
         .when("/insere", {
             templateUrl : "view/insere.html"
@@ -36,8 +39,8 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
             situacao: null 
         }];
 
-        $scope.btn_insere = function(){
-            console.log("btn_insere clicado");
+        $scope.btn_add_ans = function(){
+            console.log("btn_add_ans clicado");
 
             $scope.objANS.id_ans = 0;
             $scope.objANS.dt_assinatura = new Date().toISOString().substring(0, 10);
@@ -59,15 +62,15 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
     
         };
 
-        $scope.btn_atualiza = function(){
-            console.log("btn_atualiza clicado");
+        $scope.btn_alt_ans = function(){
+            console.log("btn_alt_ans clicado");
         };
 
-        $scope.btn_remove = function(){
-            console.log("btn_remove clicado");
+        $scope.btn_del_ans = function(){
+            console.log("btn_del_ans clicado");
         }
 
-        $scope.mostra_ans_assinado = function(){
+        $scope.mostraAns = function(){
             console.log("tbl carregada no inicio");
 
             $http.get("api/mostraAns.php").then(function (response) {
@@ -75,6 +78,6 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
 			});
         };
 
-        $scope.mostra_ans_assinado();
+        $scope.mostraAns();
 
     });
