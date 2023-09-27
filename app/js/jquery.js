@@ -1,24 +1,30 @@
 $(function(){
-    
-    $("#btnEnviaAlteracao").submit(function( event ) {
-        event.preventDefault();
+    var msg = "";
+
+    $("form#formAltera").submit(function(event) {
+            event.preventDefault();
    
-        // Obtém alguns valores dos elementos da página:
-        var $form = $( this ),
-      term = $form.find( "input[name='s']" ).val(),
-      url = $form.attr( "action" );
-   
-    // Envia os dados usando post
-    var posting = $.post( url, { s: term } );
-   
-    // Coloca os resultados em uma div
-    posting.done(function( data ) {
-      var content = $( data ).find( "#content" );
-      $( "#result" ).empty().append( content );
+            var formData = new FormData(this);
+            console.log(formData);
+
+            $.ajax({
+                url: "./api/altera.php",
+                type: "POST",
+                data: formData,
+                success: function(data){
+                    console.log(data);
+                    msg = data;
+                    window.location.href="#!mostra";
+                },
+                cache: false,
+                contentType: false,
+                processData: false
+            });
     });
-  });
 });
 
+
+/*
 $(document).ready(function(){
     // console.log("jquery ok");
 
@@ -65,3 +71,4 @@ $(document).ready(function(){
         });
     });
 });
+*/

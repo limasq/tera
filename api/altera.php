@@ -3,6 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
   
 include('conn.php');
+$_POST = json_decode(file_get_contents('php://input'), true);
 
 $id_ans = $_POST['id_ans'];
 (isset($_POST['situacao']) && !empty($_POST['situacao']) ? $situacao = $_POST['situacao'] : $situacao = "");
