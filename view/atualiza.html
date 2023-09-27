@@ -2,45 +2,38 @@
 
 <section id="updateAns">
 
-        <div class="card">
+        <div class="card card-altera">
             <h3 class="subtitulo">Opções de alteração ou atualização</h3>
-            
+            <hr />
             <div class="card-body">
                 <form>
                     <div class="mb-3 row">
-                        <label for="situacao" class="form-label col-sm-3">Mudança na situação do ANS</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="situacao" ng-model="situacao" />
-                        </div>    
+                        <label for="idAlvo" class="form-label">ANS a alterar</label>
+                        <input type="text" class="form-control" id="idAlvo" ng-model="idAlvo" value="{{$scope.id_ans}}" disabled />    
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="altera_responsavel" class="form-label col-sm-3">Mudança do responsável</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="altera_responsavel" ng-model="altera_responsavel" />
-                        </div>    
+                        <label for="situacao" class="form-label">Situação</label>
+                        <input type="text" class="form-control" id="situacao" ng-model="situacao" />    
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="altera_faixa_tempo" class="form-label col-sm-3">Mudança na faixa de tempo</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="altera_faixa_tempo" ng-model="altera_faixa_tempo" />
-                        </div>    
+                        <label for="altera_responsavel" class="form-label">Responsável</label>
+                        <input type="text" class="form-control" id="altera_responsavel" ng-model="altera_responsavel" />    
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="altera_consumo" class="form-label col-sm-3">Mudança na informação</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="altera_consumo" ng-model="altera_consumo" />
-                        </div>    
+                        <label for="altera_faixa_tempo" class="form-label">Faixa de tempo</label>
+                        <input type="text" class="form-control" id="altera_faixa_tempo" ng-model="altera_faixa_tempo" />    
                     </div>
 
                     <div class="mb-3 row">
-                        <label class="form-label col-sm-3">&nbsp;</label>
-                        <div class="col-sm-9">
-                            <button type="button" class="btn btn-primary" ng-click="btn_alt_ans()">Atualizar</button>
-                        </div>    
+                        <label for="altera_consumo" class="form-label">Informação</label>
+                        <input type="text" class="form-control" id="altera_consumo" ng-model="altera_consumo" />    
                     </div>
+                    
+                    <button type="button" class="btn btn-primary" ng-click="btnEnviaAtualizacao()">Atualizar</button>    
+                    <button type="button" class="btn btn-warning" ng-click="btnDesiste()">Desistir</button>
                 </form>
             </div>
         </div>                     

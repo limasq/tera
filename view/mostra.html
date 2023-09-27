@@ -13,7 +13,7 @@
         </div>    
 
         <div class="col-sm-2 d-grid gap-2" style="text-align: right;">
-            <a class="btn btn-outline-success" href="#!insere">Adiciona ANS</a>
+            <button class="btn btn-outline-success" href="#!insere"><i class="fa fa-file">&nbsp;</i>Adiciona ANS</button>
         </div>                            
     </div>
 
@@ -41,8 +41,8 @@
                 <td>{{item.dt_assinatura | date:'dd/MM/yyyy'}}</td>
                 <td>{{item.email}}</td>
                 <td>{{item.situacao}}</td>
-                <td><a class="btn btn-outline-warning btn-sm" href="#!atualiza">Altera</a></td>
-                <td><a class="btn btn-outline-danger btn-sm" href="#!remove">Remove</a></td>
+                <td><a class="btn btn-outline-warning btn-sm" href="#!atualiza" ng-click="btnAtualiza(item.id_ans)"><i class="fa fa-edit">&nbsp;</i>Altera</a></td>
+                <td><a class="btn btn-outline-danger btn-sm" href="#!remove" ng-click="btnRemove(item.id_ans)"><i class="fa fa-trash">&nbsp;</i>Remove</a></td>
             </tr>
         </tbody>
     </table>    

@@ -6,6 +6,9 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
         .when("/", {
             templateUrl : "view/login.html"
         })
+        .when("/sair", {
+            templateUrl : "view/login.html"
+        })
         .when("/cadastro", {
             templateUrl : "view/cadastro.html"
         })
@@ -62,12 +65,12 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
     
         };
 
-        $scope.btn_alt_ans = function(){
-            console.log("btn_alt_ans clicado");
+        $scope.btnAtualiza = function(item){
+            console.log("id do ans a altera: " + item);
         };
 
-        $scope.btn_del_ans = function(){
-            console.log("btn_del_ans clicado");
+        $scope.btnRemove = function(item){
+            console.log("id do ans a excluir: " + item);
         }
 
         $scope.mostraAns = function(){
