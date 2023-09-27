@@ -8,7 +8,7 @@
             <form>
                 <div class="mb-3 row">
                     <label for="idAlvo" class="form-label">Mudança na situação do ANS</label>
-                    <input type="text" class="form-control" id="idAlvo" ng-model="idAlvo" value="{{$scope.id_ans}}" disabled />  
+                    <input type="text" class="form-control" id="idAlvo" ng-model="idAlvo" value="{{idx}}" />  
                 </div>
 
                 <button type="button" class="btn btn-primary" ng-click="btnEnviaRemocao()">Atualizar</button>
@@ -16,4 +16,5 @@
             </form>
         </div>
     </div>    
+    {{idx}}
 </section>
