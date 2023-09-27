@@ -39,6 +39,7 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 ## Melhorias
 1. Montar o documento a partir dos dados inseridos, permitindo que o cliente consumidor (dos dados) imprima para pdf e insira assinatura eletrônica;
 2. Ferramenta para o upload do arquivo assinado (no item anterior) e receber uma resposta por e-mail de quando será liberado acesso aos dados;
+3. Transformar a página que mostra todas as informações para uma que traga apenas o mínimo necessário como id, departamento e dtAssinatura e adicionar um link (ou modal) para ver todas as informações;
 
 ## Fontes
 * [AngularJS](https://angularjs.org/)
