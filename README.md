@@ -50,4 +50,5 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 
 
 ## Hospedagem: 
-* http://asdfool.com.br/index.html 
+* [Login](http://asdfool.com.br/index.html) 
+* [CRUD](http://asdfool.com.br/index.html/#!/mostra) 
