@@ -28,7 +28,7 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 3. Inclusão dos botões de alteração e exclusão;
 4. Transformação dos botões de alteração e exclusão em links apontando para as referidas páginas pelas rotas"
 
-## Linguagens utilizadas;
+## Linguagens utilizadas
 
 * HTML5;
 * CSS - Bootstrap 5x
@@ -36,7 +36,13 @@ Os ANS (acordos de nível de serviço) deverão conter as seguintes informaçõe
 * PHP 7.3.10
 * SQL
 
+## Melhorias
+1. Montar o documento a partir dos dados inseridos, permitindo que o cliente consumidor (dos dados) imprima para pdf e insira assinatura eletrônica;
+2. Ferramenta para o upload do arquivo assinado (no item anterior) e receber uma resposta por e-mail de quando será liberado acesso aos dados;
+
 ## Fontes
+* [AngularJS](https://angularjs.org/)
+* [AngularJS Tutorial](https://www.tutlane.com/tutorial/angularjs)
 * [Playlist Angularjs - Rodrigo Branas](https://www.youtube.com/watch?v=_y7rKxqPoyg&t=25s) 
 * [Página oficial do Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 * [Datasets gratis para MySQL](https://www.databasestar.com/free-data-sets/)
