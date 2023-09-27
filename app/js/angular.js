@@ -44,7 +44,7 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
             departamento: null,
             responsavel: null,
             consulta: null,
-            validade: null,
+            historico: null,
             dt_assinatura: null,
             email: null,
             situacao: null 
@@ -66,7 +66,7 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
             $scope.objANS.departamento = item.departamento;
             $scope.objANS.responsavel = item.responsavel;
             $scope.objANS.consulta = item.consulta;
-            $scope.objANS.validade = item.validade;
+            $scope.objANS.historico = item.historico;
             $scope.objANS.dt_assinatura = item.dt_assinatura;
             $scope.objANS.email = item.email;
             $scope.objANS.situacao = item.situacao;
@@ -91,14 +91,18 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
             $scope.objANS.departamento = item.departamento;
             $scope.objANS.responsavel = item.responsavel;
             $scope.objANS.consulta = item.consulta;
-            $scope.objANS.validade = item.validade;
+            $scope.objANS.historico = item.historico;
             $scope.objANS.dt_assinatura = item.dt_assinatura;
             $scope.objANS.email = item.email;
             $scope.objANS.situacao = item.situacao;
             console.log($scope.objANS);
 
             $scope.data1 = item.id_ans;
-            $scope.s
+            $scope.data2 = item.situacao;
+            $scope.data3 = item.dt_assinatura;
+            $scope.data4 = item.historico;
+            $scope.data5 = item.consulta;
+            
         };
 
 

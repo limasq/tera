@@ -8,11 +8,10 @@
    	$query = $conn->query($sql);
  
    	if($query){
-   		$out['message'] = 'ANS removida com sucesso!';
+   		$out['msg'] = 'ANS removida com sucesso!';
    	}
    	else{
-   		$out['error'] = true;
-   		$out['message'] = 'Erro - ANS persiste!';
+   		$out['msg'] = 'Erro - ANS persiste!';
    	}
  
     echo json_encode($out);

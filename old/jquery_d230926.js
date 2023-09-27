@@ -1,24 +1,3 @@
-$(function(){
-    
-    $("#btnEnviaAlteracao").submit(function( event ) {
-        event.preventDefault();
-   
-        // Obtém alguns valores dos elementos da página:
-        var $form = $( this ),
-      term = $form.find( "input[name='s']" ).val(),
-      url = $form.attr( "action" );
-   
-    // Envia os dados usando post
-    var posting = $.post( url, { s: term } );
-   
-    // Coloca os resultados em uma div
-    posting.done(function( data ) {
-      var content = $( data ).find( "#content" );
-      $( "#result" ).empty().append( content );
-    });
-  });
-});
-
 $(document).ready(function(){
     // console.log("jquery ok");
 

@@ -35,7 +35,8 @@ if (empty($_POST['email']))
     $email = $_POST['email'];
 
 if (empty($_POST['situacao']))
-    echo 'campo vazio';
+    $situacao = '';
+
     $situacao = $_POST['situacao'];
 
 if ($id_ans == 0) {
