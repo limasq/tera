@@ -15,20 +15,8 @@ var app = angular.module("myApp", ["ngAnimate", "ngRoute"]);
             templateUrl : "view/cadastro.html",
             controller  : "crudCtrl"
         })
-        .when("/insere", {
-            templateUrl : "view/insere.html",
-            controller  : "crudCtrl"
-        })
-        .when("/atualiza", {
-            templateUrl : "view/atualiza.html",
-            controller  : "crudCtrl"
-        })
         .when("/mostra", {
             templateUrl : "view/mostra.html",
-            controller  : "crudCtrl"
-        })
-        .when("/remove", {
-            templateUrl : "view/remove.html",
             controller  : "crudCtrl"
         });
     });
